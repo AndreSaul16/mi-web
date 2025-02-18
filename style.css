@@ -1,0 +1,106 @@
+/* General */
+body {
+    background: linear-gradient(135deg, #2c003e, #10001f);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-weight: bold;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+.btn-custom:hover {
+    background-color: #d81b60;
+}
+
+/* Sección de servicios (cards) */
+#hanging-icons h2 {
+    color: #ff4081;
+    text-align: center;
+}
+
+.icon-square {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Formulario */
+/* Contenedor principal */
+.form-wrapper {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene altura */
+    height: 100vh; /* Opcional, para centrar en pantalla */
+}
+
+/* Estilos del formulario */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%; /* Evita que se estire a los bordes */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Asegura que los inputs ocupen el ancho correcto */
+.form-control {
+    width: 100%;
+}
+
+/* Botón */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-custom:hover {
+    background-color: #d81b60;
+}
+
+/* Footer */
+
+.nav .bi {
+    color: white;  /* Cambia a cualquier color que prefieras */
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s ease-in-out; /* Animación suave al pasar el mouse */
+}
+
+.nav .bi:hover {
+    color: #ff80ab;  /* Color rosa cuando pasas el mouse */
+}
+
