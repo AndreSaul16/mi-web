@@ -32,40 +32,19 @@ body {
 }
 
 /* Sección de servicios (cards) */
-
-/* Asegurar que los títulos y textos de la sección de servicios sean blancos */
-.titleService {
-    color: white !important;
-}
-
-/* Opcional: Cambiar el color del botón a un tono más visible */
-#hanging-icons .btn-primary {
-    background-color: #e91e63;
-    border-color: #e91e63;
-    color: white;
-}
-
-#hanging-icons .btn-primary:hover {
-    background-color: #d81b60;
-    border-color: #d81b60;
+.container-service p {
+    text-align: justify;
 }
 
 .icon-square {
     width: 4rem;
     height: 4rem;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    align-items: flex-start;
     justify-content: center;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
 }
 
 /* Formulario */
@@ -101,6 +80,7 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
 .btn-custom:hover {
     background-color: #d81b60;
 }
@@ -108,12 +88,12 @@ body {
 /* Footer */
 
 .nav .bi {
-    color: white;  /* Cambia a cualquier color que prefieras */
+    color: white; /* Cambia a cualquier color que prefieras */
     font-size: 24px; /* Tamaño de los iconos */
     transition: color 0.3s ease-in-out; /* Animación suave al pasar el mouse */
 }
 
 .nav .bi:hover {
-    color: #ff80ab;  /* Color rosa cuando pasas el mouse */
+    color: #ff80ab; /* Color rosa cuando pasas el mouse */
 }
 
