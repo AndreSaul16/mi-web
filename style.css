@@ -32,9 +32,22 @@ body {
 }
 
 /* Sección de servicios (cards) */
-#hanging-icons h2 {
-    color: #ff4081;
-    text-align: center;
+
+/* Asegurar que los títulos y textos de la sección de servicios sean blancos */
+.titleService {
+    color: white !important;
+}
+
+/* Opcional: Cambiar el color del botón a un tono más visible */
+#hanging-icons .btn-primary {
+    background-color: #e91e63;
+    border-color: #e91e63;
+    color: white;
+}
+
+#hanging-icons .btn-primary:hover {
+    background-color: #d81b60;
+    border-color: #d81b60;
 }
 
 .icon-square {
