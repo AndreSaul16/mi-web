@@ -32,6 +32,41 @@ body {
 }
 
 /* Sección de servicios (cards) */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #ff80ab;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    color: white;
+}
+
+.service-item p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+
 .container-service p {
     text-align: justify;
 }
@@ -53,7 +88,6 @@ body {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente si el contenedor tiene altura */
-    height: 100vh; /* Opcional, para centrar en pantalla */
 }
 
 /* Estilos del formulario */
@@ -79,10 +113,13 @@ body {
     padding: 12px;
     font-weight: bold;
     text-align: center;
+    background-color: #e91e63; /* Rosa fuerte */
+    border-color: #e91e63;
 }
 
-.btn-custom:hover {
-    background-color: #d81b60;
+.btn-primary:hover {
+    background-color: #a9164c; /* Un tono más oscuro para el hover */
+    border-color: #d81b60;
 }
 
 /* Footer */

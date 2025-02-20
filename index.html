@@ -11,125 +11,157 @@
 </head>
 
 <body>
-<!--Aqui empieza el navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark">
+    <!--Aqui empieza el navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Saúl Briceño</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="" target="_blank">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Aqui viene la seccion hero-->
+    <section class="hero-section text-center text-lg-start">
+        <div class="container" id="home">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Desarrollo de Software</h1>
+                    <p class="mt-3">Soy un programador apasionado por la tecnología, con experiencia en crear soluciones digitales innovadoras. Me especializo en desarrollar software eficiente y a medida, convirtiendo problemas en oportunidades con código inteligente y funcional. Si puedes imaginarlo, puedo programarlo. 🚀</p>
+                    <a href="#contacto" class="btn btn-custom mt-3">Contáctame</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://www.linuxlinks.com/wp-content/uploads/2019/02/development-interfaces.jpg"
+                        class="img-fluid rounded-circle" alt="Mi foto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <!--Estos son los cards que contienen los servicios-->
+    <div class="container my-5" id="services">
+        <h2 class="pb-2 border-bottom text-center">Servicios</h2>
+        <div class="services-grid mt-4">
+            <div class="service-item">
+                <i class="bi bi-globe"></i>
+                <h3>Aplicaciones</h3>
+                <p>Desarrollo de software a medida, desde sitios web hasta aplicaciones completas.</p>
+                <a href="#contacto" class="btn btn-primary">Más información</a>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-briefcase"></i>
+                <h3>Consultoría</h3>
+                <p>Asesoría en soluciones tecnológicas para empresas y proyectos digitales.</p>
+                <a href="#contacto" class="btn btn-primary">Más información</a>
+            </div>
+            <div class="service-item">
+                <i class="bi bi-wrench-adjustable-circle-fill"></i>
+                <h3>Soluciones</h3>
+                <p>Mantenimiento y reparación de computadoras para optimizar el rendimiento.</p>
+                <a href="#contacto" class="btn btn-primary">Más información</a>
+            </div>
+        </div>
+    </div>
+    <div class="b-example-divider"></div>
+
+    <!--Aqui empiezan las preguntas frecuentes-->
+    <div class="container my-5" id="faq">
+        <h2 class="pb-2 border-bottom text-center">Preguntas Frecuentes</h2>
+        <div class="accordion mt-4" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Qué servicios ofreces?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Ofrezco desarrollo de software, consultoría tecnológica y soluciones informáticas como
+                        reparación y mantenimiento.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                        ¿Cuánto tiempo tarda un proyecto en completarse?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Depende del proyecto. Pequeñas páginas web pueden tomar días, mientras que aplicaciones más
+                        grandes pueden tardar semanas o meses.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                        ¿Cómo puedo contactarte?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Puedes escribirme a través del formulario de contacto o en mis redes sociales.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Este es el formulario-->
+    <div class="container my-5">
+        <h2 class="pb-2 border-bottom text-center" id="contacto">Contacto</h2>
+        <div class="form-wrapper">
+            <form action="https://formspree.io/f/mpwqkaej" method="POST" class="form-container">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Escribe tu nombre aquí" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" name="Escribe tu mensaje aquí" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    </section>
+    <div class="b-example-divider"></div>
+
+    <!--Aqui empieza el footer-->
     <div class="container">
-        <a class="navbar-brand" href="#">Saúl Briceño</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://tublog.com" target="_blank">Blog</a></li>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <i class="bi bi-bootstrap-fill" style="font-size: 24px; color: white;"></i>
+                </a>
+                <span style="text-decoration-color: white;">&copy; 2024 Silver Tech</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/sbrice%C3%B1o/"><i
+                            class="bi bi-linkedin"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/saulphotograph/"><i
+                            class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/AndreSaul16"><i
+                            class="bi bi-github"></i></a></li>
             </ul>
-        </div>
+        </footer>
     </div>
-</nav>
-
-<!--Aqui viene la seccion hero-->
-<section class="hero-section text-center text-lg-start">
-    <div class="container" id="home">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h1>Hola, soy Saúl</h1>
-                <p class="mt-3">Soy un programador. Apasionado por la tecnología, con experiencia en solucionar
-                    problemas mediante el software.</p>
-                <a href="#contacto" class="btn btn-custom mt-3">Contáctame</a>
-            </div>
-            <div class="col-lg-6 text-center">
-                <img src="https://media.licdn.com/dms/image/v2/C4D03AQExRFpo9HBAdQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1610532266626?e=2147483647&v=beta&t=eA-P-Yed5XWhzLoa-zwfS4HwOoCxZIT8X4OFNCbExDo"
-                     class="img-fluid rounded-circle" alt="Mi foto">
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="b-example-divider"></div>
-
-<!--Estos son los cards que contienen los servicios-->
-<div class="container-service">
-    <div class="container px-4 py-5" id="services">
-        <h2 class="pb-2 border-bottom">Servicios</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <i class="bi bi-globe"></i>
-                </div>
-                <div>
-                    <h3 class="fs-2 text-white">Aplicaciones</h3>
-                    <p>Ofrezco servicios de desarrollo de aplicaciones informáticas a medida, creando desde páginas estáticas hasta aplicaciones
-                        dinámicas, siempre enfocándome en un rendimiento óptimo, usabilidad y soluciones personalizadas
-                        para ti.</p>
-                    <a href="#contacto" class="btn btn-primary">Más información</a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <i class="bi bi-briefcase"></i>
-                </div>
-                <div>
-                    <h3 class="fs-2 text-white">Consultoría</h3>
-                    <p>Brindo asesoramiento a empresas y profesionales que buscan optimizar sus procesos tecnológicos,
-                        mejorar su infraestructura o estrategias digitales, con soluciones personalizadas y eficientes
-                        para crecer.</p>
-                    <a href="#contacto" class="btn btn-primary">Más información</a>
-                </div>
-            </div>
-            <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <i class="bi bi-wrench-adjustable-circle-fill"></i>
-                </div>
-                <div>
-                    <h3 class="fs-2 text-white">Soluciones</h3>
-                    <p>Brindo servicios de ensamblaje, mantenimiento y reparación de computadoras, optimizando el
-                        rendimiento y garantizando la fiabilidad tanto para hogares como para empresas, asegurando
-                        calidad y eficiencia.SS</p>
-                    <a href="#contacto" class="btn btn-primary">Más información</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!--Este es el formulario-->
-<div class="form-wrapper">
-    <form action="https://formspree.io/f/mpwqkaej" method="POST" class="form-container">
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="email" placeholder="Escribe tu nombre aquí" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Mensaje</label>
-            <textarea class="form-control" name="Escribe tu mensaje aquí" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-
-</div>
-</section>
-
-<!--Aqui empieza el footer-->
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <i class="bi bi-bootstrap-fill" style="font-size: 24px; color: white;"></i>
-            </a>
-            <span style="text-decoration-color: white;">&copy; 2024 Silver Tech</span>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
-        </ul>
-    </footer>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
